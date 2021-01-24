@@ -1,0 +1,133 @@
+body{
+    background: url(fondo.jpg);
+    background-repeat: repeat;
+ }
+ p{
+ 	text-align: justify;
+ }
+a{
+    color:#F6D155;
+    text-decoration: none;
+ }
+a:hover{
+    text-decoration: underline;
+ }
+header{
+   background-color: #223A5E;
+   border-bottom: 5px solid grey;
+   text-align: center;
+   font-size: 1.8em;
+   font-variant: small-caps;
+   font-weight: bold;
+}
+
+}
+header::first-letter{
+   font-size: 1.5em;
+}
+
+#indice{
+  width: 15%;
+  background-color: #223A5E;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+   float: left;
+}
+#indice h1{
+	text-align: center;
+}
+#contenido{
+   margin-left: 20%;
+   margin-right: 15%;
+}
+.titulo{
+  	color: brown;
+	border-bottom: 1px solid brown;
+
+}
+h2{
+	color: brown;
+	font-style: italic;
+}
+#titulo2{
+   color:brown;
+   font-style:italic ;
+}
+#introduccion{
+	color: brown;
+}
+#tabla{
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: none;
+   color: black;
+}
+#tabla tr td{
+	padding: 10px;
+}
+#tabla tr:nth-child(even){
+   background-color: #D49F75;
+}
+#tabla tr:nth-child(odd){
+   background-color: #C48F65;
+}
+#tabla tr:first-child{
+   background-color: #223A5E;
+   color: white;
+}
+
+figure{
+	text-align: center;
+}
+figcaption{
+	font-style: italic;
+	padding: 10px;
+	text-align: center;
+}
+img {
+   border: 3px solid grey;
+}
+#bloque{
+   margin-top: 2em;
+   margin-left: 10%; 
+   display: flex;
+}
+#bloque img{
+	width: 100%;
+}
+#bloque figure{
+	width: 20%;
+	display: inline-block;
+}
+
+
+footer{
+   border-top: 5px solid grey;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   background-color: #223A5E;
+   color:white;
+}
+footer p{
+	text-align: center;
+}
+
+@media (max-width: 640px){
+	#indice{
+		float: none;
+		width: 100%;
+	}
+  #bloque{
+    margin-left: 0;
+  }
+	#bloque figure{
+		width: 20%;
+	}
+	#contenido{
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
